@@ -99,7 +99,13 @@
   }
 
 
-
+  .author-row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; /* 水平居中显示 */
+  align-items: center; /* 如果需要的话可以垂直居中 */
+  width: 100%; /* 使容器宽度充满其父容器 */
+}
   .column.is-2.has-text-centered img.interpolation-image {
 
     object-fit: cover;
@@ -150,23 +156,10 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 ">Next-gen Graphic Design for Business Content Understanding and Generation</h1>
           <div class="is-size-5 publication-authors">
+            <div class="author-row">
+              <strong>Contact:</strong>&nbsp&nbsp&nbsp
             <span class="author-block">
               <a href="https://www.microsoft.com/en-us/research/people/yuyua/">Yuhui Yuan,</a>&nbsp&nbsp&nbsp
-            </span>
-            <span class="author-block">
-              <a>Yuyang Peng,</a><sup>1</sup>&nbsp&nbsp&nbsp
-            </span>
-            <span class="author-block">
-              <a>Sirui Zhang,</a><sup>1</sup>&nbsp&nbsp&nbsp
-            </span>
-            <span class="author-block">
-              <a>Yifan Pu,</a><sup>1</sup>&nbsp&nbsp&nbsp
-            </span>
-            <span class="author-block">
-              <a>Tianbao Qiu,</a><sup>1</sup>&nbsp&nbsp&nbsp
-            </span>
-            <span class="author-block">
-              <a>Duo Li,</a><sup>1</sup>&nbsp&nbsp&nbsp
             </span>
             <span class="author-block">
               <a href="https://www.microsoft.com/en-us/research/people/doch/">Dong Chen,</a>&nbsp&nbsp&nbsp
@@ -180,10 +173,29 @@
             <span class="author-block">
               <a href="https://www.microsoft.com/en-us/research/people/bainguo/">Baining Guo</a>&nbsp&nbsp&nbsp
             </span>
-            <br>
-            <span class="is-size-6 publication-authors">
-              <sup>1</sup><span>interns at microsoft&nbsp&nbsp&nbsp</span>
+          </div>
+          <div class="author-row">
+            <strong>Intern:</strong>&nbsp&nbsp&nbsp
+
+            <span class="author-block">
+              Yuyang Peng,&nbsp&nbsp&nbsp
             </span>
+            <span class="author-block">
+              Duo Li,&nbsp&nbsp&nbsp
+            </span>
+            <span class="author-block">
+              Sirui Zhang,&nbsp&nbsp&nbsp
+            </span>
+            <span class="author-block">
+              Yifan Pu,&nbsp&nbsp&nbsp
+            </span>
+            <span class="author-block">
+              Tianbao Qiu
+            </span>
+          </div>
+
+            <br>
+
 
 
           </div>
@@ -313,7 +325,7 @@
       <img src="./static/assets/spatial_layout/5.png" class="interpolation-image" alt="Interpolate start reference image."/>
     </div>
   </div>
-  <div class="columns is-centered">
+  <div class="columns is-centered"style="margin-bottom: -45px;">
     <div class="column is-2 ">
       <img src="./static/assets/spatial/0.png" class="interpolation-image" alt="Interpolate start reference image."/>
     </div>
@@ -333,7 +345,26 @@
       <img src="./static/assets/spatial/5.png" class="interpolation-image" alt="Interpolate start reference image."/>
     </div>
   </div>
-
+  <div class="columns is-centered">
+    <div class="column is-2 ">
+      <img src="./static/assets/spatial_dalle/0.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/spatial_dalle/1.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/spatial_dalle/2.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/spatial_dalle/3.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/spatial_dalle/4.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/spatial_dalle/5.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+  </div>
 
 
   <div class="columns is-centered has-text-centered">
@@ -383,7 +414,7 @@
       <img src="./static/assets/counting_layout/5.png" class="interpolation-image" alt="Interpolate start reference image."/>
     </div>
   </div>
-  <div class="columns is-centered">
+  <div class="columns is-centered"style="margin-bottom: -45px;">
     <div class="column is-2 ">
       <img src="./static/assets/counting/0.png" class="interpolation-image" alt="Interpolate start reference image."/>
     </div>
@@ -403,6 +434,27 @@
       <img src="./static/assets/counting/5.png" class="interpolation-image" alt="Interpolate start reference image."/>
     </div>
   </div>
+  <div class="columns is-centered">
+    <div class="column is-2 ">
+      <img src="./static/assets/counting_dalle/0.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/counting_dalle/1.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/counting_dalle/2.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/counting_dalle/3.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/counting_dalle/4.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/counting_dalle/5.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+  </div>
+
   <div class="columns is-centered has-text-centered">
     <!-- <div class="column is-four-fifths"> -->
       <p style="text-align: center;">Accurate Multilingual Visual Text</p>
