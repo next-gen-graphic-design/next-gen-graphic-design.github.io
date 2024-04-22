@@ -117,7 +117,9 @@
   .column.is-2.has-text-centered:hover img.interpolation-image {
     opacity: 0.5;
   }
-
+  .enlarged-image {
+  width: 90%;
+  }
   .column.is-2.has-text-centered .caption {
     position: absolute;
     top: 0;
@@ -187,11 +189,15 @@
               Sirui Zhang,&nbsp&nbsp&nbsp
             </span>
             <span class="author-block">
+              Tianbao Qiu,&nbsp&nbsp&nbsp
+            </span>
+            <span class="author-block">
               Yifan Pu,&nbsp&nbsp&nbsp
             </span>
             <span class="author-block">
-              Tianbao Qiu
+              Zeyu Liu
             </span>
+
           </div>
 
             <br>
@@ -231,7 +237,7 @@
         <h2 class="title is-3">Motivation</h2>
         <div class="content has-text-justified">
           <p>
-            (1) Develop design generation engine for PowerPoint and Microsoft Designer.  (2) Generating high-quality design data for Responsible VL models for understanding business content like posters, flyers and others. (3) DALLE-3 is weak in generating high-quality graphic design.
+            (1) Develop a design generation engine for PowerPoint and Microsoft Designer.  (2) Generate high-quality design data for Responsible VL models to understand business content such as posters, flyers, and other materials. (3) DALLE-3 is weak at generating high-quality graphic designs.
         </div>
     </div>
   </div>
@@ -245,7 +251,7 @@
         <h2 class="title is-3">Key Challenges</h2>
         <div class="content has-text-justified">
           <p>
-            DALL-E 3 often struggles with generating accurate graphic designs due to its limited ability to grasp true intentions and manage fine-grained controls, such as counting-aware or spatial-relationship aware prompts and accurately render visual text.
+            DALL-E 3 frequently struggles with generating accurate graphic designs due to its limited ability to grasp true intentions and manage fine-grained controls, such as counting-aware or spatial-relationship aware prompts and accurately render visual text.
         </div>
       </div>
     </div>
@@ -253,20 +259,15 @@
 
   <br>
   <br>
-  <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Approach</h2>
-        <div class="content has-text-justified">
-          <!-- <p>
-            Our innovative approach represents the next generation in graphic design generation models. It leverages extensive design space knowledge and data to perform sophisticated planning, reasoning, and generation, making it particularly effective in contexts requiring precision in counting, spatial awareness, and glyph generation. 
-          </p> -->
-          <img src="./static/assets/method/Picture1.png" alt="pipeline" style="width: 120%;">
+        <div class="column is-four-fifths">
+            <h2 class="title is-3">Approach</h2>
         </div>
-      </div>
     </div>
-  </div>  
+    <div class="columns is-centered">
+      <img src="./static/assets/method/method.png" alt="pipeline" class="enlarged-image">
+    </div>
 
   <br>
   <br>
@@ -285,6 +286,7 @@
     <!-- </div> -->
   </div>
 
+  <div class="container is-max-desktop">
   <div class="columns is-centered"style="margin-bottom: -45px;">
     <div class="column is-2 ">
       <img src="./static/assets/spatial_int/0.png" class="interpolation-image" alt="Interpolate start reference image."/>
@@ -305,6 +307,7 @@
       <img src="./static/assets/spatial_int/5.png" class="interpolation-image" alt="Interpolate start reference image."/>
     </div>
   </div>
+</div>
   <div class="columns is-centered"style="margin-bottom: -45px;">
     <div class="column is-2 ">
       <img src="./static/assets/spatial_layout/0.png" class="interpolation-image" alt="Interpolate start reference image."/>
@@ -530,6 +533,8 @@
   <div class="container is-max-desktop content">
     <h2 class="title">Acknowledgements</h2>
     <br>
+    Zhanhao Liang, Shishi Xiao, Ji Li  
+     https://glyph-byt5.github.io/
     Website adapted from the following <a href="https://nerfies.github.io/">template</a>.
   </div>
 </section>
