@@ -59,23 +59,23 @@
   }
 
   .image_container {
-    border-radius: 10px; /*设置图片的圆角，可以根据你的需求调整这个值*/
-    /*margin: 10px; !* 在图片的外部元素上设置间距 *!*/
-    overflow: hidden; /* 为了保持图片的圆角效果 */
-    position: relative;
-    width: 100%;
+  /* Other styles remain unchanged */
+  width: 100%; /* Adjust if you want the container to be wider than the parent */
+  height: auto; /* This will be dictated by the content, i.e., the image */
+  justify-content: center; /* 水平居中 */
+  display: flex;       /* 定义 flex 容器 */
 
-    padding-bottom: 100%;
-  }
+}
 
-  .image_container img {
 
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* 这会使图片保持原始比例，但仍然填充其容器 */
-    object-position: center; /* 新增加的代码，让图片居中 */
-  }
+.image_container img {
+  /* Remove 'position: absolute;' if it's not needed for other layout purposes */
+  width:  140%; /* Allow the image to scale its width based on its height */
+  height: auto; /* Scale the height based on the aspect ratio of the image */
+  max-width: none; /* Allow the image to exceed the 100% width of the container if needed */
+  object-fit: contain; /* This will ensure the image fits within the container with its aspect ratio preserved */
+}
+
 
   .caption {
     position: absolute;
@@ -118,8 +118,14 @@
     opacity: 0.5;
   }
   .enlarged-image {
-  width: 100%;
-  }
+  max-width: 100%; /* 控制图片不超出其父容器的宽度 */
+  height: auto; /* 保持图片的原始宽高比 */
+  object-fit: contain; /* 确保图片内容都能看到，即使会有空白边缘 */
+  display: block; /* 避免默认的行内元素特性导致的额外空间 */
+  margin: auto; /* 水平居中 */
+}
+
+
   .column.is-2.has-text-centered .caption {
     position: absolute;
     top: 0;
@@ -265,9 +271,12 @@
             <h2 class="title is-3">Approach</h2>
         </div>
     </div>
-    <div class="columns is-centered">
-      <img src="./static/assets/method/method.png" alt="pipeline" class="enlarged-image">
+    <div class="image_container">
+      <img src="./static/assets/method/method.png" alt="pipeline">
     </div>
+    
+    
+
 
   <br>
   <br>
