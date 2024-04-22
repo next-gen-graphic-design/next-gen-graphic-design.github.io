@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Next-gen Graphic Design for Business Content Understanding and Generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Next-gen Graphic Design for Business Content Understanding and Generation
+  </title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/img/COLE.jpg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+<style>
+  .publication-title {
+    font-family: "textsc "
+  }
+  video {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  .image_wrapper {
+    position: relative;
+    width: 226px;
+    height: 226px;
+  }
+
+  .image_container {
+    border-radius: 10px; /*设置图片的圆角，可以根据你的需求调整这个值*/
+    /*margin: 10px; !* 在图片的外部元素上设置间距 *!*/
+    overflow: hidden; /* 为了保持图片的圆角效果 */
+    position: relative;
+    width: 100%;
+
+    padding-bottom: 100%;
+  }
+
+  .image_container img {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 这会使图片保持原始比例，但仍然填充其容器 */
+    object-position: center; /* 新增加的代码，让图片居中 */
+  }
+
+  .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    font-family: 'Comic Sans MS', 'Verdana', 'Tahoma', sans-serif;
+    text-align: center; /* 让文本在其容器中水平居中 */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .image_container:hover .caption {
+    opacity: 1;
+  }
+
+
+
+  .column.is-2.has-text-centered img.interpolation-image {
+
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.5s ease;
+    object-position: center; /* 新增加的代码，让图片居中 */
+  }
+
+  .column.is-2.has-text-centered:hover img.interpolation-image {
+    opacity: 0.5;
+  }
+
+  .column.is-2.has-text-centered .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    font-family: 'Comic Sans MS', 'Verdana', 'Tahoma', sans-serif;
+    text-align: center; /* 让文本在其容器中水平居中 */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .column.is-2.has-text-centered:hover .caption {
+    opacity: 1;
+  }
+
+  .columns.is-centered img {
+    margin-bottom: 20px; /* 或者你想要的任何值 */
+  }
+
+
+  .section { margin: 3px; padding: 5px; }
+</style>
+
+<!--<h1 class="title is-1 publication-title">COLE :A Hierarchical Generation Framework for Graphic Design</h1>-->
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 ">Next-gen Graphic Design for Business Content Understanding and Generation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.microsoft.com/en-us/research/people/yuyua/">Yuhui Yuan,</a>&nbsp&nbsp&nbsp
+            </span>
+            <span class="author-block">
+              <a>Yuyang Peng,</a><sup>1</sup>&nbsp&nbsp&nbsp
+            </span>
+            <span class="author-block">
+              <a>Sirui Zhang,</a><sup>1</sup>&nbsp&nbsp&nbsp
+            </span>
+            <span class="author-block">
+              <a>Yifan Pu,</a><sup>1</sup>&nbsp&nbsp&nbsp
+            </span>
+            <span class="author-block">
+              <a>Tianbao Qiu,</a><sup>1</sup>&nbsp&nbsp&nbsp
+            </span>
+            <span class="author-block">
+              <a>Duo Li,</a><sup>1</sup>&nbsp&nbsp&nbsp
+            </span>
+            <span class="author-block">
+              <a href="https://www.microsoft.com/en-us/research/people/doch/">Dong Chen,</a>&nbsp&nbsp&nbsp
+            </span>
+            <span class="author-block">
+              <a href="https://www.microsoft.com/en-us/research/people/chnuwa/">Chunyu Wang,</a>&nbsp&nbsp&nbsp
+            </span>
+            <span class="author-block">
+              <a href="https://www.microsoft.com/en-us/research/people/jianbao/">Jianmin Bao,</a>&nbsp&nbsp&nbsp
+            </span>
+            <span class="author-block">
+              <a href="https://www.microsoft.com/en-us/research/people/bainguo/">Baining Guo</a>&nbsp&nbsp&nbsp
+            </span>
+            <br>
+            <span class="is-size-6 publication-authors">
+              <sup>1</sup><span>interns at microsoft&nbsp&nbsp&nbsp</span>
+            </span>
+
+
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup> </sup>Microsoft Research</span>
+          </div>
+
+          <!-- <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2403.09622"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Motivation</h2>
+        <div class="content has-text-justified">
+          <p>
+            Generating high-quality graphic designs is crucial for effective advertising, branding, and marketing, as well as for training responsible VL 
+            models that excel in both understanding and generating business content like Posters, Flyers and others.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+  <br>
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Key Challenges</h2>
+        <div class="content has-text-justified">
+          <p>
+            Previous text-to-image models, such as DALL-E 3, have often struggled with generating accurate graphic designs due to their limited 
+            ability to grasp true intentions and manage fine-grained controls, such as counting-aware or spatial-relationship aware prompts and accurately render visual text.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Approach</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our innovative approach represents the next generation in graphic design generation models. It leverages extensive design space knowledge and 
+            data to perform sophisticated planning, reasoning, and generation, making it particularly effective in contexts requiring precision in counting, spatial awareness, 
+            and glyph generation.
+          </p>
+          <img src="./static/assets/method/Picture1.png" alt="pipeline" style="width: 120%;">
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <br>
+  <br>
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Design Generation Results</h2>
+      <br>
+    </div>
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+    <!-- <div class="column is-four-fifths"> -->
+      <p style="text-align: center;">Spatial-Arrangement</p>
+      <!-- <br> -->
+    <!-- </div> -->
+  </div>
+
+  <div class="columns is-centered">
+    <div class="column is-2 ">
+      <img src="./static/assets/spatial/Picture2.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/spatial/Picture3.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/spatial/Picture4.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/spatial/Picture5.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/spatial/Picture6.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/spatial/Picture7.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+    <!-- <div class="column is-four-fifths"> -->
+      <p style="text-align: center;">Counting</p>
+      <!-- <br> -->
+    <!-- </div> -->
+  </div>
+
+  <div class="columns is-centered">
+    <div class="column is-2 ">
+      <img src="./static/assets/counting/Picture9.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/counting/Picture10.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/counting/Picture11.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/counting/Picture12.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/counting/Picture13.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/counting/Picture14.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+    <!-- <div class="column is-four-fifths"> -->
+      <p style="text-align: center;">Accurate Multilingual Visual Text</p>
+      <!-- <br> -->
+    <!-- </div> -->
+  </div>
+
+  <div class="columns is-centered">
+    <div class="column is-2 ">
+      <img src="./static/assets/text/Picture2.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/text/Picture3.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/text/Picture4.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/text/Picture5.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/text/Picture6.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+    <div class="column is-2 ">
+      <img src="./static/assets/text/Picture7.png" class="interpolation-image" alt="Interpolate start reference image."/>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+    	@misc{liu2024glyphbyt5,
+      	title={Glyph-ByT5: A Customized Text Encoder for Accurate Visual Text Rendering}, 
+      	author={Zeyu Liu and Weicong Liang and Zhanhao Liang and Chong Luo and Ji Li and Gao Huang and Yuhui Yuan},
+      	year={2024},
+      	eprint={2403.09622},
+      	archivePrefix={arXiv},
+      	primaryClass={cs.CV}
+	}
+    </code></pre>
+  </div>
+</section> -->
+
+
+<section class="section" id="Acknowledgements">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgements</h2>
+    <br>
+    Website adapted from the following <a href="https://nerfies.github.io/">template</a>.
+  </div>
+</section>
+
+</body>
+</html>
